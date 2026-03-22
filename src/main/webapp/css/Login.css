@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 111, 0);
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/570/649/large_2x/touching-virtual-screen-online-shopping-to-digital-cart-with-global-network-connection-intelligent-ecommerce-blue-background-free-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+ background-size: cover;
+
+display: flex;
+align-items: center;
+position: relative;
+overflow: hidden;
+}
+
+.popup{
+    position: absolute;
+    height: 70px;
+ display: none;
+ align-items: center;
+ justify-content: center;
+    width:300px;
+    top: 0;
+    right: 0;
+    background-color: rgb(20, 20, 20);
+  border-radius: 10px;
+  animation: come 3s ease  infinite forwards
+  ;
+}
+
+@keyframes come {
+  0% {
+    opacity: 0;
+    transform: translateX(350px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(350px);
+  }
+}
+
+
+.popup output{
+    padding: 10px;
+    color: white;
+}
+
+.login-container{
+margin-left: 8%;
+    height: 70%;
+    width: 30%;
+    /* border: 2px solid red; */
+
+}
+
+
+.title{
+ /* border: 2px solid rgb(120, 185, 51); */
+ height: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.title span{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.inputfield_container{
+    height: 30%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+  align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.inputfield{
+    width: 100%;
+   
+   display: flex;
+  align-items: center;
+    flex-direction: column;
+}
+.inputfield input{
+    width: 90%;
+  height: 50px;
+  /* border-radius: 20px; */
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 50;
+   
+}
+.buttonf{
+height: 15%;
+width: 100%;
+    /* border: 2px solid red; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+button{
+    height: 50%;
+    width: 90%;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 153, 255);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+.line{
+    border: 1px solid rgb(103, 101, 101);
+    margin-top:40px ;
+    height: 0;
+   position: relative;
+   width: 80%;
+   text-align: center;
+   margin-left: 10%;
+}
+
+/* .line p{
+
+    color: aliceblue;
+    background-color: rgb(24, 23, 23);
+ position: absolute;
+ top: -11px;
+ left: 165px;
+padding-left: 10px;
+padding-right: 10px;
+} */
+
+.login-with img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.login-with{
+    /* border: 2px solid red; */
+margin-top: 10%;
+width: 60%;
+text-align: center;
+margin-left: 20%;
+display: flex;
+justify-content:space-around;
+}
+
+
+.signup{
+        /* border: 2px solid red; */
+
+        margin-top: 10%;
+        text-align: center;
+       
+}
+.signup a{
+     text-decoration: none;
+     color: rgb(214, 214, 214);
+}
+.signup a span:nth-of-type(2){
+    color:  rgb(0, 153, 255);
+    font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+   .login-container{
+    width: 60%;
+   }
+}
+@media (max-width: 1120px) {
+   .login-container{
+    width: 70%;
+   }
+}
+@media (max-width: 1220px) {
+   .login-container{
+    width: 60%;
+   }
+}
+@media (max-width: 500px) {
+   .login-container{
+    width: 100%;
+    margin-left: 0px;
+    
+   }
+
+   body{
+    background-image: url("https://img.freepik.com/free-photo/computer-mouse-paper-bags-blue-background-top-view_169016-43523.jpg?semt=ais_hybrid&w=740&q=80");
+   }
+   .inputfield input{
+    border-bottom: 1px solid white;
+    color: white;
+   }
+
+.line{
+    border: 1px solid rgb(255, 255, 255);
+ 
+}
+.signup a{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+}
+
+
+ .inputfield input::placeholder{
+ 
+    color: white;
+   }
+
+button{
+    background-color: white;
+    color:  rgb(0, 153, 255);
+}
+.signup a span:nth-of-type(2){
+    color:  rgb(255, 255, 255);
+    font-weight: bolder;
+}
+}
